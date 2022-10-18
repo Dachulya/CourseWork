@@ -35,6 +35,13 @@ public class Employee {
     public int getSalary(){
         return  this.salary;
     }
+    public  void setSalary(int salary){
+        this.salary=salary;
+    }
+    public  void setDepartment(int department){
+        this.department=department;
+    }
+
     @Override
     public String toString(){
         return name+" "+department+" "+salary+" ID: "+id;

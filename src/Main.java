@@ -2,10 +2,10 @@ public class Main {
     static Employee[] employee =new Employee[10];
     public static void main(String[] args) {
         giveNames();
-        getNames();
         summarizeMonthSalaryAndAverageValue();
         foindMinMonthSalary();
         foindMaxMonthSalary();
+        getNames();
     }
     public static void giveNames(){
         employee [0]=new Employee(new Name("Anatoly","Ananas"," Ananasovich"),1,56000);
@@ -18,9 +18,9 @@ public class Main {
         employee [7]=new Employee(new Name("Pavel2.0","Potato2"," Potatoovich"),3,5606);
         employee [8]=new Employee(new Name("Arkady2.0","Сelery2"," Сeleryovich"),4,566);
         employee [9]=new Employee(new Name("Mephisto2.0","Cucumber2"," Cucumberovich"),5,56006);
-        /*for (int i = 0; i < employee.length; i++) {
-             System.out.println(employee[i].getName());*/
-        }
+        for (int i = 0; i < employee.length; i++) {
+             System.out.println(employee[i]);
+        }}
     public static void getNames(){
         for (int i = 0; i < employee.length; i++) {
             System.out.println(employee[i].getName());
@@ -35,8 +35,8 @@ public class Main {
     public static void foindMinMonthSalary(){
         int min=employee[0].getSalary();
         for (int i=1; i<= employee.length-1;i++){
-            if (employee[i-1].getSalary()<employee[i].getSalary()){
-                min=employee[i-1].getSalary();
+            if (employee[i].getSalary()<min){
+                min=employee[i].getSalary();
             }}
         System.out.println("Employee salary min: "+min);}
     public static void foindMaxMonthSalary(){

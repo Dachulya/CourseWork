@@ -36,7 +36,7 @@ public class Main {
         System.out.println("Employee salary costs: "+sum);
         }
     private static void averageValueSalary(){
-        int sum=0;
+        float sum=0;
         for (int i=0; i<= employee.length-1;i++){
             sum=sum+employee[i].getSalary();}
         float average=sum/ employee.length;

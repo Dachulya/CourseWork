@@ -1,4 +1,4 @@
-public class Name {
+public class Name {//не нужен, но раз уж написала то пусть будет
     private String firstName;
     private String secondName;
     private String threeName;
